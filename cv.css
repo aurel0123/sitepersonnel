@@ -1,0 +1,15 @@
+section{
+    margin: 20px 50px ;
+    
+}
+section button{
+    border: none;
+    background-color: #fff;
+    padding: 10px 20px ;
+    border-radius: 6px;
+}
+section a{
+    text-decoration: none;
+    color: rgb(23, 79, 156);
+
+}

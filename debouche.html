@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="home-navigation">
+        <!--Accueil-->
+        <header>
+            <div>
+                <img src="logo2.jpeg">
+            </div>
+            
+
+            <div class="barre_de_navigatin">
+                <ul >
+                    <li ><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#formation">Formation</a></li>
+                    <li><a href="debouche.html">Debouché</a></li>
+                    
+                    <li><a href="apropos.html">A propos</a></li>
+                </ul>
+            </div>
+            <div class="btn-inscription">
+                <button><a href="Inscription.html">inscription</a></button>
+            </div>
+
+             
+             <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+        </header>
+        
+        <section class="head_debouché">
+            <div class="gauche">
+        
+                <h1>DÉCOUVREZ NOS OFFRES D'EMPLOIS</h1>
+            
+            </div>
+            
+        </section >  
+    </section>
+
+    <section>
+        <div class="contenu1 content">
+            <div class="contenu-box2">
+                <h4>ASSISTANT COMPTABLE</h4>
+                <p>Le poste d’assistant comptable a pour objectif de contribuer à la bonne tenue de la comptabilité et de veiller à l’atteinte des objectifs de délais et d’organisation parfaite</p>
+                <button class="btn">En Savoir Plus</button>
+            </div>
+            <div class="contenu-box2">
+                <h4>COMMUNITY MANAGER</h4>
+                <p>Nous sommes à la recherche d’un Webmaster / Community Manager. Missions : • Développer le portefeuille commercial de la société sur internet et les réseaux sociaux ;</p>
+                <button class="btn">En Savoir Plus</button>
+            </div>
+            <div class="contenu-box2">
+                <h4>DIRECTEUR MARKETING</h4>
+                <p>Nous sommes à la recherche d’un Directeur Commercial et Marketing. Missions • Développer la notoriété et l’image de marque de la société auprès des clients, des investisseurs, des médias et contribuer</p>
+                <button class="btn">En Savoir Plus</button>
+            </div>
+            <div class="contenu-box2">
+                <h4>RESPONSABLE INFORMATIQUE</h4>
+                <p>Missions • Administrer et maintenir le système d’information en conditions opérationnelles : serveurs Windows, serveur de messagerie, routeurs, proxy, switches, postes de travail, périphériques, • Installer et</p>
+                <button class="btn">En Savoir Plus</button>
+            </div>
+        </div>
+    </section>
+    
+   
+    <footer>
+        <div class="services_list">
+           
+
+            <div class="service">
+              <img src="pin.png" alt="">
+              <h2>Adresses</h2>
+              <p>Bénin-Cotonou</p>
+          </div>
+          <div class="service">
+              <img src="email.png" alt="">
+              <h2>Emails</h2>
+              <p>kodjogbeaure4@gmail.com</p>
+          </div>
+          <div class="service">
+              <img src="call.png" alt="">
+              <h2>Numbers</h2>
+              <p>+229 91917503</p>
+          </div>
+          
+          <hr>
+        </div>
+    </footer>
+
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.barre_de_navigatin');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
+</html>

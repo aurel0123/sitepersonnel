@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section class="home-navigation">
+        <!--Accueil-->
+        <header>
+            <div>
+                <img src="logo2.jpeg">
+            </div>
+            
+            <!--<h1 class="title">Bienvenue  à <span class="hd">Pigier</span>Bénin  </h1>-->
+            <div class="barre_de_navigatin">
+                <ul >
+                    <li ><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#formation">Formation</a></li>
+                    <li><a href="debouche.html">Debouché</a></li>
+                    <li><a href="apropos.html">A propos</a></li>   
+                </ul>
+            </div>
+            <div class="btn-inscription">
+                <button><a href="Inscription.html">inscription</a></button>
+            </div>
+
+             
+             <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+        </header>
+        
+    </section>
+    
+    <section id="contact">
+       
+        <div class="localisation_contact_div">
+            <div class="localisation">
+                <h3>Notre Adresse</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.140803790927!2d2.4005113097330413!3d6.37581779358779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102355bf2c355c85%3A0x2c20fc4c24985e05!2sPIGIER%20BENIN!5e0!3m2!1sfr!2sbj!4v1700859455794!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form_contact">
+                <h3>Envoyer un message</h3>
+                <form action="#">
+                    <input type="text"placeholder="Nom">
+                    <input type="email"placeholder="Adresse Mail">
+                    <input type="text"placeholder="Objet">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.barre_de_navigatin');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
+</html>
